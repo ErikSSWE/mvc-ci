@@ -1,25 +1,16 @@
 language: php
 
 php:
-    - "7.2"
-    - "7.3"
     - "7.4"
-    - hhvm
-    - nightly
 
 sudo: false
 
 git:
     submodules: false
 
-matrix:
-    allow_failures:
-        - php: nightly
-        - php: hhvm
-
 before_script:
-    - make install
+    - make install test
 
 script:
-    - make check
-    - make test
+    - make phpunit
+    - make phpcs phpmd phpstan
