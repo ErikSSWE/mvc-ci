@@ -1,4 +1,7 @@
 {
+    "name": "mvc/ci",
+    "description": "kmom06",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Mos\\": "src/",
